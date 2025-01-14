@@ -14,6 +14,6 @@ const config = {
   },
 };
 
-const lineChartObj = new Chart(ctx, config);
+const chartObj = new Chart(ctx, config);
 
-console.log(lineChartObj);
+console.log(chartObj);
