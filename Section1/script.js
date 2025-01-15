@@ -3,22 +3,23 @@
 const ctx = document.getElementById('canvas').getContext('2d');
 
 const config = {
-  type: 'polarArea',
+  type: 'scatter',
   data: {
-    labels: ['January', 'February', 'March', 'April', 'May'],
     datasets: [
       {
-        data: [1, 4, 1, 5, 9],
+        data: [
+          { x: 20, y: 30 },
+          { x: 45, y: 12 },
+          { x: 24, y: 33 },
+          { x: 15, y: 17 },
+          { x: 30, y: 24 },
+          { x: 37, y: 15 },
+        ],
+        pointStyle: 'circle',
+        pintRadius: 2,
       },
     ],
   },
 };
 
-const chartObj = new Chart(ctx, config);
-
-// console.log(chartObj);
-
-// window.addEventListener('click', (e) => {
-//   chartObj.config.type = 'bar';
-//   chartObj.update();
-// });
+new Chart(ctx, config);
