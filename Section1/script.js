@@ -3,7 +3,7 @@
 const ctx = document.getElementById('canvas').getContext('2d');
 
 const config = {
-  type: 'line',
+  type: 'pie',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May'],
     datasets: [
@@ -16,9 +16,9 @@ const config = {
 
 const chartObj = new Chart(ctx, config);
 
-console.log(chartObj);
+// console.log(chartObj);
 
-window.addEventListener('click', (e) => {
-  chartObj.config.type = 'bar';
-  chartObj.update();
-});
+// window.addEventListener('click', (e) => {
+//   chartObj.config.type = 'bar';
+//   chartObj.update();
+// });
