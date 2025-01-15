@@ -3,7 +3,7 @@
 const ctx = document.getElementById('canvas').getContext('2d');
 
 const config = {
-  type: 'doughnut',
+  type: 'radar',
   data: {
     labels: ['January', 'February', 'March', 'April', 'May'],
     datasets: [
