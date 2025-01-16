@@ -12,6 +12,13 @@ const config = {
       },
     ],
   },
+  options: {
+    elements: {},
+    scales: {},
+    plugins: {},
+    layout: {},
+    animations: false,
+  },
 };
 
 new Chart(ctx, config);
