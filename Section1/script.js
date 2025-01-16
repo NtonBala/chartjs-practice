@@ -55,6 +55,7 @@ const config = {
         font: { size: 20, weight: 'bold' },
         text: 'Customizing Line Chart Options',
       },
+      legend: false,
     },
     layout: {},
     animations: false,
