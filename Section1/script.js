@@ -61,6 +61,7 @@ const config = {
       padding: 20,
     },
     animations: false,
+    tension: 0.4,
   },
 };
 
