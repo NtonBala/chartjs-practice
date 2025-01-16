@@ -21,6 +21,10 @@ const config = {
         borderColor: 'red',
         backgroundColor: 'yellow',
       },
+      line: {
+        borderWidth: 5,
+        borderColor: 'blue',
+      },
     },
     scales: {},
     plugins: {},
