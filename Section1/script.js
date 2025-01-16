@@ -13,7 +13,15 @@ const config = {
     ],
   },
   options: {
-    elements: {},
+    elements: {
+      point: {
+        pointStyle: 'rect',
+        radius: 7,
+        borderWidth: 3,
+        borderColor: 'red',
+        backgroundColor: 'yellow',
+      },
+    },
     scales: {},
     plugins: {},
     layout: {},
