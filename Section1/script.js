@@ -49,6 +49,12 @@ const config = {
         color: 'blue',
         font: { size: 27 },
       },
+      subtitle: {
+        display: true,
+        color: 'black',
+        font: { size: 20, weight: 'bold' },
+        text: 'Customizing Line Chart Options',
+      },
     },
     layout: {},
     animations: false,
