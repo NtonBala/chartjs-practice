@@ -57,7 +57,9 @@ const config = {
       },
       legend: false,
     },
-    layout: {},
+    layout: {
+      padding: 20,
+    },
     animations: false,
   },
 };
