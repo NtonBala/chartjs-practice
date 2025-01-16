@@ -42,7 +42,14 @@ const config = {
         grid: { z: 0, color: 'black', lineWidth: 0.4 },
       },
     },
-    plugins: {},
+    plugins: {
+      title: {
+        display: true,
+        text: '-=Line Chart=-',
+        color: 'blue',
+        font: { size: 27 },
+      },
+    },
     layout: {},
     animations: false,
   },
