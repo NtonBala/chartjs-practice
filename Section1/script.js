@@ -26,7 +26,22 @@ const config = {
         borderColor: 'blue',
       },
     },
-    scales: {},
+    scales: {
+      x: {
+        ticks: {
+          color: 'black',
+          font: { size: 18 },
+        },
+        grid: { z: 0, color: 'black', lineWidth: 0.4 },
+      },
+      y: {
+        ticks: {
+          color: 'black',
+          font: { size: 18 },
+        },
+        grid: { z: 0, color: 'black', lineWidth: 0.4 },
+      },
+    },
     plugins: {},
     layout: {},
     animations: false,
