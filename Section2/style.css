@@ -1,21 +1,21 @@
 html,
 body {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: url(BackgroundSeasons.jpg);
-	background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url(BackgroundSeasons.jpg);
+  background-size: 100% auto; */
 }
 
-/* canvas {
-	background-color: black;
-} */
+canvas {
+  background-color: black;
+}
 
 div {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
