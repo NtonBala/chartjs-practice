@@ -42,7 +42,10 @@ const graph = {
     new Chart(ctx, {
       type: 'doughnut',
       data: {
-        datasets: [{ data: graph.seasonDays, backgroundColor: graph.seasonColors, label: ['Winter', 'Spring', 'Summer', 'Autumn'] }],
+        datasets: [
+          { data: graph.seasonDays, backgroundColor: graph.seasonColors, label: ['Winter', 'Spring', 'Summer', 'Autumn'] },
+          { data: graph.monthsDays, backgroundColor: graph.monthColors, label: graph.monthsLabels },
+        ],
       },
     });
   },
