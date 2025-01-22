@@ -1,5 +1,7 @@
 'use strict';
 
+Chart.register(ChartDataLabels);
+
 const canvas = document.getElementById('myChart');
 const ctx = canvas.getContext('2d');
 
@@ -55,6 +57,9 @@ const graph = {
             callbacks: {
               label: (context) => `${context.dataset.label[context.dataIndex]} (days: ${context.dataset.data[context.dataIndex]})`,
             },
+          },
+          datalabels: {
+            formatter: (value, context) => context.dataset.label[context.dataIndex],
           },
         },
       },
