@@ -50,6 +50,13 @@ const graph = {
       options: {
         maintainAspectRatio: false,
         animation: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (context) => `${context.dataset.label[context.dataIndex]} (days: ${context.dataset.data[context.dataIndex]})`,
+            },
+          },
+        },
       },
     });
   },
