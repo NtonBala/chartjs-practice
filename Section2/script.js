@@ -59,6 +59,13 @@ const graph = {
             },
           },
           datalabels: {
+            backgroundColor: 'rgba(255, 255, 255, 0.5)',
+            borderRadius: 4,
+            padding: 4,
+            color: 'blue',
+            font: {
+              weight: 'bold',
+            },
             formatter: (value, context) => context.dataset.label[context.dataIndex],
           },
         },
