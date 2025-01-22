@@ -47,6 +47,9 @@ const graph = {
           { data: graph.monthsDays, backgroundColor: graph.monthColors, label: graph.monthsLabels },
         ],
       },
+      options: {
+        maintainAspectRatio: false,
+      },
     });
   },
 };
