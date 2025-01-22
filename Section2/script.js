@@ -53,6 +53,8 @@ const graph = {
         maintainAspectRatio: false,
         animation: false,
         offset: 30,
+        borderWidth: 1,
+        borderRadius: 4,
         plugins: {
           tooltip: {
             callbacks: {
