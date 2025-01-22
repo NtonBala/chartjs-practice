@@ -52,6 +52,7 @@ const graph = {
       options: {
         maintainAspectRatio: false,
         animation: false,
+        offset: 30,
         plugins: {
           tooltip: {
             callbacks: {
