@@ -55,8 +55,8 @@ const graph = {
         offset: 30,
         borderWidth: 1,
         borderRadius: 4,
-        hoverBackgroundColor: 'rgba(255, 255, 255, 0.7)',
-        hoverBorderColor: 'black',
+        // hoverBackgroundColor: 'rgba(255, 255, 255, 0.7)',
+        // hoverBorderColor: 'black',
         hoverBorderWidth: '2',
         hoverOffset: -50,
         plugins: {
