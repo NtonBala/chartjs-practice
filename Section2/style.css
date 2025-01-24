@@ -7,13 +7,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: url(BackgroundSeasons.jpg);
-  background-size: 100% auto; */
+  background: url(BackgroundSeasons.jpg);
+  background-size: 100% auto;
 }
 
-canvas {
+/* canvas {
   background-color: black;
-}
+} */
 
 div {
   height: 100%;
