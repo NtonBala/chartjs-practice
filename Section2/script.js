@@ -59,6 +59,7 @@ const graph = {
         // hoverBorderColor: 'black',
         hoverBorderWidth: '2',
         hoverOffset: -50,
+        circumference: 90,
         plugins: {
           tooltip: {
             callbacks: {
