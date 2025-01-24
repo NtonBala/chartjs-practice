@@ -6,6 +6,7 @@ const canvas = document.getElementById('myChart');
 const ctx = canvas.getContext('2d');
 
 const graph = {
+  myChart: null,
   monthColors: [
     '#12bfe7',
     '#56cedc',
@@ -19,7 +20,7 @@ const graph = {
     '#eec375',
     '#e8b25c',
     '#e2932a',
-  ].map((color) => color + '80'),
+  ],
   seasonColors: [],
   monthsLabels: [],
   monthsDays: [],
@@ -41,7 +42,7 @@ const graph = {
   charting() {
     graph.dataGenerator();
 
-    new Chart(ctx, {
+    graph.myChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
         datasets: [
@@ -59,7 +60,7 @@ const graph = {
         hoverBorderColor: 'black',
         hoverBorderWidth: '2',
         hoverOffset: -50,
-        circumference: 360,
+        circumference: 90,
         radius: window.innerHeight / 2 - 20,
         plugins: {
           tooltip: {
@@ -85,3 +86,12 @@ const graph = {
 
 Chart.defaults.font.size = window.innerHeight / 60;
 graph.charting();
+window.addEventListener(
+  'mousemove',
+  function (e) {
+    graph.myChart.options.circumference = (360 * e.x) / window.innerWidth;
+    graph.myChart.options.radius = window.innerHeight / (e.x / window.innerWidth + 1.5);
+    graph.myChart.update();
+  },
+  false
+);
