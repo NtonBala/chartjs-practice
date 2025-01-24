@@ -19,7 +19,7 @@ const graph = {
     '#eec375',
     '#e8b25c',
     '#e2932a',
-  ],
+  ].map((color) => color + '80'),
   seasonColors: [],
   monthsLabels: [],
   monthsDays: [],
