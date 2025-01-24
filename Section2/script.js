@@ -83,4 +83,5 @@ const graph = {
   },
 };
 
+Chart.defaults.font.size = window.innerHeight / 60;
 graph.charting();
