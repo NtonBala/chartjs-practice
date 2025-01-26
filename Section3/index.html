@@ -20,9 +20,14 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
   </head>
   <body>
+    <!-- * Receives data (external file storing decimal places for Pi, similar to data.txt) from the user. -->
     <input type="file" id="file" />
+
     <canvas id="myChart"> You browser does not support Canvas</canvas>
-    <button onclick="clearInterval(graph.timerId)">Stop</button>
+
+    <button>Stop</button>
+
+    <!-- * Stops computation of the update and rendering the chart. -->
     <script src="script.js"></script>
   </body>
 </html>
