@@ -23,6 +23,7 @@ const graph = {
       options: {
         maintainAspectRatio: false,
         animation: false,
+        offset: 40,
         plugins: {
           title: {
             display: true,
