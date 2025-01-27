@@ -20,6 +20,18 @@ const graph = {
       },
       options: {
         maintainAspectRatio: false,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Distribution of digits in the mathematical constant Pi',
+            color: 'white',
+            font: {
+              size: 20,
+              weight: 'bold',
+            },
+          },
+          legend: false,
+        },
       },
     });
   },
