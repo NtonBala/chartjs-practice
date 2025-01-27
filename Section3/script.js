@@ -1,5 +1,7 @@
 'use strict';
 
+Chart.register(ChartDataLabels);
+
 const canvas = document.getElementById('myChart');
 const ctx = canvas.getContext('2d');
 
@@ -35,6 +37,13 @@ const graph = {
             },
           },
           legend: false,
+          datalabels: {
+            formatter: (value, context) => `${context.dataIndex}: ${value.toFixed(1)}%`,
+            color: 'white',
+            font: {
+              weight: 'bold',
+            },
+          },
         },
       },
     });
