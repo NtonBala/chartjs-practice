@@ -22,6 +22,7 @@ const graph = {
       },
       options: {
         maintainAspectRatio: false,
+        animation: false,
         plugins: {
           title: {
             display: true,
