@@ -8,6 +8,8 @@ ctx.canvas.parentNode.style.width = '100%';
 
 const graph = {
   piChart: null,
+  // * Array of numbers each showing how often (%) a digit from 0 to 9 occur in the number of Pi.
+  // * Digit from 0 to 9 are represented by array indexes.
   myData: [0, 20, 10, 10, 10, 30, 10, 0, 0, 10],
   myLabels: [...Array(10).keys()],
 
