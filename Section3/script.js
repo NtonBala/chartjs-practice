@@ -36,7 +36,7 @@ const graph = {
               weight: 'bold',
             },
           },
-          legend: false,
+          legend: { display: false },
           datalabels: {
             formatter: (value, context) => `${context.dataIndex}: ${value.toFixed(1)}%`,
             color: 'white',
