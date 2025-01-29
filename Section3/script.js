@@ -14,6 +14,10 @@ const graph = {
   // * Digit from 0 to 9 are represented by array indexes.
   myData: [0, 20, 10, 10, 10, 30, 10, 0, 0, 10],
   myLabels: [...Array(10).keys()],
+  // * Collects groups of 10 digits.
+  tenDigits: [],
+  // * A fraction to display the limit digit to be analyzed.
+  limit: 500 / 50,
 
   charting() {
     graph.piChart = new Chart(ctx, {
@@ -48,8 +52,29 @@ const graph = {
       },
     });
   },
+
+  // * Reads data file (e.g. data.txt) and builds tenDigits array.
+  handleFileSelect(e) {
+    const file = e.target.files[0];
+
+    if (file.type.includes('text')) {
+      const reader = new FileReader();
+
+      reader.readAsText(file);
+      reader.onload = () => {
+        // * Reads file lines and limits the number of strings to be processed by limit prop.
+        const allData = reader.result.split('\r\n').slice(0, graph.limit);
+        graph.tenDigits = allData.flatMap((data) => data.split(' ').slice(0, 5));
+
+        console.log(graph.tenDigits);
+      };
+    } else {
+      return alert(`${file.name} is not a valid text file`);
+    }
+  },
 };
 
 window.addEventListener('load', function () {
   graph.charting();
+  this.document.getElementById('file').addEventListener('change', graph.handleFileSelect);
 });
